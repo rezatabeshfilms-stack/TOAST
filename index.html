@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TOAST — A Reactive Walk-Through Toaster Oven (Burning Man 2026)</title>
+  <meta name="description" content="TOAST is a fully reactive walk-through toaster oven installation of mirrored metal and chrome. Dormant when empty, it awakens with human presence by glowing, humming, and venting vapor — coming to the playa for Burning Man 2026." />
+  <meta property="og:title" content="TOAST — Burning Man 2026 Art Installation" />
+  <meta property="og:description" content="A reactive walk-through toaster oven that warms with human presence: light, sound, and vapor. Built from mirrored metal + chrome, powered by solar." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/Screenshot_2026-01-14_at_2.14.22AM.png" />
+  <link rel="icon" href="assets/IMG_5717.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark">TOAST</span>
+        <span class="brand-sub">Burning Man 2026</span>
+      </a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#experience">Artist</a>
+        <a href="#how">How it works</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#kickstarter" class="pill">Kickstarter</a>
+      </nav>
+      <button class="menu" aria-label="Open menu" id="menuBtn">☰</button>
+    </div>
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <a href="#about">About</a>
+      <a href="#experience">Artist</a>
+      <a href="#how">How it works</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#kickstarter">Kickstarter</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="badge">Reactive • Walk-through • Mirrored Metal + Chrome</div>
+          <h1>A toaster oven you can step inside.</h1>
+          <p class="lead">
+            <strong>TOAST</strong> is a fully reactive walk-through toaster oven installation.
+            Dormant when empty, it awakens with human presence by <strong>glowing warmer</strong>,
+            <strong>humming softly</strong>, and <strong>venting vapor</strong>—embodying the
+            <em>Burnt Toast Theory</em>: small disruptions can reveal hidden harmony and transformation.
+          </p>
+          <div class="cta-row">
+            <a class="btn primary" href="#kickstarter">Kickstarter (Coming Soon)</a>
+            <a class="btn" href="#gallery">See renders</a>
+          </div>
+          <div class="meta-row">
+            <div class="meta">
+              <div class="meta-k">Location</div>
+              <div class="meta-v">Black Rock City (Playa)</div>
+            </div>
+            <div class="meta">
+              <div class="meta-k">Year</div>
+              <div class="meta-v">Burning Man 2026</div>
+            </div>
+            <div class="meta">
+              <div class="meta-k">Build</div>
+              <div class="meta-v">San Francisco, CA</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="media-frame">
+            <div class="media-gradient"></div>
+            <img src="assets/Screenshot_2026-01-14_at_2.15.45AM.png" alt="Exterior render of TOAST on the playa" loading="eager" />
+          </div>
+          <div class="thumb-row">
+            <button class="thumb is-active" data-src="assets/Screenshot_2026-01-14_at_2.15.45AM.png" aria-label="Show exterior scene">
+              <img src="assets/Screenshot_2026-01-14_at_2.15.45AM.png" alt="" loading="lazy" />
+            </button>
+            <button class="thumb" data-src="assets/Screenshot_2026-01-14_at_2.14.09AM.png" aria-label="Show smoky interior scene">
+              <img src="assets/Screenshot_2026-01-14_at_2.14.09AM.png" alt="" loading="lazy" />
+            </button>
+            <button class="thumb" data-src="assets/Screenshot_2026-01-14_at_2.14.22AM.png" aria-label="Show control knobs close-up">
+              <img src="assets/Screenshot_2026-01-14_at_2.14.22AM.png" alt="" loading="lazy" />
+            </button>
+          </div>
+          <p class="caption">Warm “heating coil” light, chrome reflections, and vapor vents—activated by people.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>What is TOAST?</h2>
+          <p>
+            A futuristic, mirrored metal and chrome installation designed to evoke the form of a massive,
+            glowing toaster oven resting on the playa. By day, it mirrors the vast sky; by night, it becomes
+            a beacon of amber, gold, and violet.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Presence = ignition</h3>
+            <p>
+              The installation is activated entirely through human presence. As more people enter, light and sound
+              intensify in a continuous “warming” curve—no performances, no music, just an appliance coming alive.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Burnt Toast Theory</h3>
+            <p>
+              What first appears ruined or flawed can become connection and unexpected joy. TOAST reframes disruption
+              as a spark for transformation—made real through participation.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Universal, nonverbal access</h3>
+            <p>
+              No language, cultural knowledge, or prior Burning Man experience needed. Anyone can enter and become part
+              of the work immediately.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>How it works</h2>
+          <p>One shared occupancy “brain” drives light, sound, and vapor—everything ramps smoothly.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="stack">
+            <div class="spec">
+              <h3>Reactive lighting</h3>
+              <ul>
+                <li>Two “coil lanes” on the floor + two on the ceiling (LED rope/strips)</li>
+                <li>Warmth and brightness increase with occupancy</li>
+                <li>Dim or off when empty</li>
+              </ul>
+            </div>
+            <div class="spec">
+              <h3>Ambient sound</h3>
+              <ul>
+                <li>Soft electrical hum, gentle fan whirr, occasional relay clicks</li>
+                <li>Contained sound field (primarily inside)</li>
+                <li>No music, no voice, no bass projection</li>
+              </ul>
+            </div>
+            <div class="spec">
+              <h3>Vapor “burnt toast” moment</h3>
+              <ul>
+                <li>Fog machine triggers at a set “capacity” threshold</li>
+                <li>Short, controlled releases through upper vents</li>
+                <li>Syncs with a brief warmth/brightness peak</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="diagram card">
+            <h3>System logic (simple)</h3>
+            <div class="diagram-box">
+              <div class="node">People count</div>
+              <div class="arrow">↓</div>
+              <div class="row">
+                <div class="node small">Lights warm + brighten</div>
+                <div class="node small">Sound layers fade in</div>
+                <div class="node small">Fog triggers at threshold</div>
+              </div>
+              <div class="arrow">↓</div>
+              <div class="node">Smooth fade back to idle</div>
+            </div>
+            <p class="small">
+              Built with low-voltage controls and weatherproof housings. Designed for safe flow: wide opening, rounded edges,
+              marked thresholds, daily inspection.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="build">
+      <div class="container">
+        <div class="section-head">
+          <h2>Materials + build approach</h2>
+          <p>
+            Constructed from lightweight, reclaimed metal and chrome panels mounted on a steel frame
+            (2×2 and 4×4 steel tubing). Mirrored surfaces use polished stainless or reflective aluminum.
+          </p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <h3>Structure</h3>
+            <p>Steel frame with reinforced joints and brackets; weatherproofed exterior; modular components for build/strike.</p>
+          </article>
+          <article class="card">
+            <h3>Power</h3>
+            <p>Solar + battery system planned for low-voltage lighting, sensors, and sound—efficient and playa-ready.</p>
+          </article>
+          <article class="card">
+            <h3>Leave No Trace</h3>
+            <p>Pre-fabrication off-playa, contained work area, daily MOOP sweeps, complete teardown and removal post-event.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Artist</h2>
+          <p>
+            I’m an interdisciplinary artist, filmmaker, and storyteller. Burning Man has shaped my life since 2017—2026 will be my 8th burn.
+            I create participatory, time-based experiences and document them through film and drone work worldwide.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Why TOAST</h3>
+            <p>
+              Bringing big art to the playa is a quest for me: to build something communal, strange, welcoming, and alive—
+              a place where people feel the shift from “spectator” to “co-creator.”
+            </p>
+          </div>
+          <div class="card">
+            <h3>Find me</h3>
+            <p class="small">
+              Instagram: <a href="https://instagram.com/dadryp" target="_blank" rel="noreferrer">@Dadryp</a> <span class="muted">(95k+)</span><br/>
+              Email: <span class="muted">add-your-email-here</span>
+            </p>
+            <p class="small muted">
+              (Tip: replace “add-your-email-here” in the HTML once you’re ready to publish.)
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Gallery</h2>
+          <p>Concept renders and references. (Add more images anytime.)</p>
+        </div>
+
+        <div class="gallery">
+          <figure class="shot">
+            <img src="assets/Screenshot_2026-01-14_at_2.15.45AM.png" alt="TOAST exterior wide render" loading="lazy">
+            <figcaption>Exterior: open “toaster mouth” portal + warm interior glow.</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/Screenshot_2026-01-14_at_2.14.09AM.png" alt="Interior crowded scene with warm lights and vapor" loading="lazy">
+            <figcaption>Interior: capacity moment—warmth + vapor builds as people gather.</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/Screenshot_2026-01-14_at_2.14.22AM.png" alt="Knob and gauge concept on trailer exterior" loading="lazy">
+            <figcaption>Exterior knobs + gauges: temperature / timer language.</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/IMG_5717.jpg" alt="Toaster oven reference photo showing top and bottom heating elements" loading="lazy">
+            <figcaption>Reference: heating elements top + bottom (in TOAST: ceiling + floor coil lanes).</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="kickstarter" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Kickstarter</h2>
+          <p>
+            We’re preparing a Kickstarter to help fund materials, fabrication, and on-playa logistics. Want to be notified when it launches?
+          </p>
+        </div>
+
+        <div class="kick card">
+          <div>
+            <h3>Coming soon</h3>
+            <p class="small">
+              The campaign will share build updates, behind-the-scenes process, and ways to support TOAST in the spirit of gifting and communal effort.
+            </p>
+            <div class="cta-row">
+              <a class="btn primary disabled" href="#" aria-disabled="true">Kickstarter (Coming Soon)</a>
+              <a class="btn" href="https://instagram.com/dadryp" target="_blank" rel="noreferrer">Follow build updates</a>
+            </div>
+          </div>
+          <div class="note">
+            <div class="note-title">Swap in your Kickstarter link</div>
+            <p class="small muted">
+              When you have the Kickstarter URL, replace the “#” in this section with your real link and remove the “disabled” class.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="muted small">© 2026 TOAST • Built in community • See you on the playa.</div>
+        <div class="small">
+          <a href="#top">Back to top ↑</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
