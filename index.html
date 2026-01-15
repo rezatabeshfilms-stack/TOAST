@@ -1,20 +1,26 @@
-some things is not right <!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>TOAST — A Reactive Walk-Through Toaster Oven (Burning Man 2026)</title>
+
   <meta name="description" content="TOAST is a fully reactive walk-through toaster oven installation of mirrored metal and chrome made for Burning Man 2026. Dormant when empty, it awakens with human presence by glowing, humming, and venting vapor — coming to the playa for Burning Man 2026." />
+
   <meta property="og:title" content="TOAST — Burning Man 2026 Art Installation" />
   <meta property="og:description" content="A reactive walk-through toaster oven that warms with human presence: light, sound, and vapor. Built from mirrored metal + chrome, powered by solar." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="assets/Screenshot_2026-01-14_at_2.14.22AM.png" />
+
   <link rel="icon" href="assets/IMG_5717.jpg" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <header class="topbar">
     <div class="container topbar-inner">
@@ -22,6 +28,7 @@ some things is not right <!doctype html>
         <span class="brand-mark">TOAST</span>
         <span class="brand-sub">Burning Man 2026</span>
       </a>
+
       <nav class="nav">
         <a href="#about">About</a>
         <a href="#experience">Artist</a>
@@ -29,8 +36,10 @@ some things is not right <!doctype html>
         <a href="#gallery">Gallery</a>
         <a href="#kickstarter" class="pill">Kickstarter</a>
       </nav>
-      <button class="menu" aria-label="Open menu" id="menuBtn">☰</button>
+
+      <button class="menu" aria-label="Open menu" id="menuBtn" aria-controls="mobileNav" aria-expanded="false">☰</button>
     </div>
+
     <div class="mobile-nav" id="mobileNav" aria-hidden="true">
       <a href="#about">About</a>
       <a href="#experience">Artist</a>
@@ -44,18 +53,20 @@ some things is not right <!doctype html>
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <div class="badge">Reactive • Walk-through • Mirrored Aluminum </div>
+          <div class="badge">Reactive • Walk-through • Mirrored Aluminum</div>
           <h1>It's time to Toast!</h1>
           <p class="lead">
             <strong>TOAST</strong> is a fully reactive toaster oven art installation.
-            Dormant when empty, it awakens with human presence by <strong>glowing warmer</strong>,
+            Dormant when empty, it awakens with human presence by <strong>glowing warmly</strong>,
             <strong>humming softly</strong>, and <strong>venting vapor</strong>—embodying the
             <em>Burnt Toast Theory</em>: small disruptions can reveal hidden harmony and transformation.
           </p>
+
           <div class="cta-row">
             <a class="btn primary" href="#kickstarter">Kickstarter (Coming Soon)</a>
             <a class="btn" href="#gallery">See renders</a>
           </div>
+
           <div class="meta-row">
             <div class="meta">
               <div class="meta-k">Location</div>
@@ -75,19 +86,34 @@ some things is not right <!doctype html>
         <div class="hero-media">
           <div class="media-frame">
             <div class="media-gradient"></div>
-            <img src="assets/Screenshot_2026-01-14_at_2.15.45AM.png" alt="Exterior render of TOAST on the playa" loading="eager" />
+            <img
+              id="heroImg"
+              src="assets/Screenshot_2026-01-14_at_2.15.45AM.png"
+              alt="Exterior render of TOAST on the playa"
+              loading="eager"
+            />
           </div>
-          <div class="thumb-row">
-            <button class="thumb is-active" data-src="assets/Screenshot_2026-01-14_at_2.15.45AM.png" aria-label="Show exterior scene">
+
+          <div class="thumb-row" aria-label="Gallery thumbnails">
+            <button class="thumb is-active" type="button"
+              data-src="assets/Screenshot_2026-01-14_at_2.15.45AM.png"
+              aria-label="Show exterior scene">
               <img src="assets/Screenshot_2026-01-14_at_2.15.45AM.png" alt="" loading="lazy" />
             </button>
-            <button class="thumb" data-src="assets/Screenshot_2026-01-14_at_2.14.09AM.png" aria-label="Show smoky interior scene">
+
+            <button class="thumb" type="button"
+              data-src="assets/Screenshot_2026-01-14_at_2.14.09AM.png"
+              aria-label="Show smoky interior scene">
               <img src="assets/Screenshot_2026-01-14_at_2.14.09AM.png" alt="" loading="lazy" />
             </button>
-            <button class="thumb" data-src="assets/Screenshot_2026-01-14_at_2.14.22AM.png" aria-label="Show control knobs close-up">
+
+            <button class="thumb" type="button"
+              data-src="assets/Screenshot_2026-01-14_at_2.14.22AM.png"
+              aria-label="Show control knobs close-up">
               <img src="assets/Screenshot_2026-01-14_at_2.14.22AM.png" alt="" loading="lazy" />
             </button>
           </div>
+
           <p class="caption">Warm “heating coil” light, chrome reflections, and vapor vents—activated by people.</p>
         </div>
       </div>
@@ -112,6 +138,7 @@ some things is not right <!doctype html>
               intensify in a continuous “warming” curve — no performances, no music, just an appliance coming alive.
             </p>
           </article>
+
           <article class="card">
             <h3>Burnt Toast Theory</h3>
             <p>
@@ -119,6 +146,7 @@ some things is not right <!doctype html>
               as a spark for transformation—made real through participation.
             </p>
           </article>
+
           <article class="card">
             <h3>Universal, nonverbal access</h3>
             <p>
@@ -142,11 +170,12 @@ some things is not right <!doctype html>
             <div class="spec">
               <h3>Reactive lighting</h3>
               <ul>
-                <li> LED Rope coils surrond the floor and ceiling inside TOAST</li>
+                <li>LED rope coils surround the floor and ceiling inside TOAST</li>
                 <li>Warmth and brightness increase with occupancy</li>
                 <li>Dim or off when empty</li>
               </ul>
             </div>
+
             <div class="spec">
               <h3>Ambient sound</h3>
               <ul>
@@ -155,6 +184,7 @@ some things is not right <!doctype html>
                 <li>No music, no voice, no bass projection</li>
               </ul>
             </div>
+
             <div class="spec">
               <h3>Vapor “burnt toast” moment</h3>
               <ul>
@@ -192,10 +222,11 @@ some things is not right <!doctype html>
         <div class="section-head">
           <h2>Materials + build approach</h2>
           <p>
-            Constructed from lightweight, reclaimed aluminum from a 1973 Airsteam mounted on a steel  frame.
+            Constructed from lightweight, reclaimed aluminum from a 1973 Airstream mounted on a steel frame.
             Mirrored surfaces use polished and reflective aluminum to mirror the vast playa.
           </p>
         </div>
+
         <div class="cards">
           <article class="card">
             <h3>Structure</h3>
@@ -227,18 +258,16 @@ some things is not right <!doctype html>
           <div class="card">
             <h3>Why TOAST</h3>
             <p>
-              Bringing big ass art to the playa is a quest for me: to build something communal, welcoming, and alive
+              Bringing big ass art to the playa is a quest for me: to build something communal, welcoming, and alive —
               a place where people feel the shift from “spectator” to “co-creator.”
             </p>
           </div>
+
           <div class="card">
             <h3>Find me</h3>
             <p class="small">
-              Instagram: <a href="https://instagram.com/dadryp" target="_blank" rel="noreferrer">@Dadryp</a> <span class="muted"></span><br/>
+              Instagram: <a href="https://instagram.com/dadryp" target="_blank" rel="noreferrer">@Dadryp</a><br/>
               Email: <span class="muted">rezatabeshfilms@gmail.com</span>
-            </p>
-            <p class="small muted">
-          
             </p>
           </div>
         </div>
@@ -253,36 +282,41 @@ some things is not right <!doctype html>
         </div>
 
         <div class="gallery">
-     <figure class="shot">
-  <img src="assets/toast-exterior-01.jpeg" alt="TOAST exterior render" loading="lazy">
-  <figcaption>Exterior render.</figcaption>
-</figure>
-<figure class="shot">
-  <img src="assets/toast-exterior-seats-02.jpeg" alt="TOAST exterior with toast benches" loading="lazy">
-  <figcaption>Exterior with toast benches.</figcaption>
-</figure>
+          <figure class="shot">
+            <img src="assets/toast-exterior-01.jpeg" alt="TOAST exterior render" loading="lazy">
+            <figcaption>Exterior render.</figcaption>
+          </figure>
 
-<figure class="shot">
-  <img src="assets/toast-interior-fog-03.jpeg" alt="TOAST interior fog moment" loading="lazy">
-  <figcaption>Interior: fog / capacity moment.</figcaption>
-</figure>
+          <figure class="shot">
+            <img src="assets/toast-exterior-seats-02.jpeg" alt="TOAST exterior with toast benches" loading="lazy">
+            <figcaption>Exterior with toast benches.</figcaption>
+          </figure>
 
-<figure class="shot">
-  <img src="assets/toast-interior-05.jpeg" alt="TOAST interior render" loading="lazy">
-  <figcaption>Interior render.</figcaption>
-</figure>
+          <figure class="shot">
+            <img src="assets/toast-interior-fog-03.jpeg" alt="TOAST interior fog moment" loading="lazy">
+            <figcaption>Interior: fog / capacity moment.</figcaption>
+          </figure>
+
+          <figure class="shot">
+            <img src="assets/toast-interior-05.jpeg" alt="TOAST interior render" loading="lazy">
+            <figcaption>Interior render.</figcaption>
+          </figure>
+
           <figure class="shot">
             <img src="assets/Screenshot_2026-01-14_at_2.15.45AM.png" alt="TOAST exterior wide render" loading="lazy">
             <figcaption>Exterior: open “toaster mouth” portal + warm interior glow.</figcaption>
           </figure>
+
           <figure class="shot">
             <img src="assets/Screenshot_2026-01-14_at_2.14.09AM.png" alt="Interior crowded scene with warm lights and vapor" loading="lazy">
             <figcaption>Interior: capacity moment—warmth + vapor builds as people gather.</figcaption>
           </figure>
+
           <figure class="shot">
             <img src="assets/Screenshot_2026-01-14_at_2.14.22AM.png" alt="Knob and gauge concept on trailer exterior" loading="lazy">
             <figcaption>Exterior knobs + gauges: temperature / timer language.</figcaption>
           </figure>
+
           <figure class="shot">
             <img src="assets/IMG_5717.jpg" alt="Toaster oven reference photo showing top and bottom heating elements" loading="lazy">
             <figcaption>Reference: heating elements top + bottom (in TOAST: ceiling + floor coil lanes).</figcaption>
@@ -311,10 +345,11 @@ some things is not right <!doctype html>
               <a class="btn" href="https://instagram.com/dadryp" target="_blank" rel="noreferrer">Follow build updates</a>
             </div>
           </div>
+
           <div class="note">
             <div class="note-title">Kickstart live in March 2026</div>
             <p class="small muted">
-              Fundraising Parties coming soon, join us at The Box Shop in San Francisco, CA 
+              Fundraising Parties coming soon, join us at The Box Shop in San Francisco, CA
             </p>
           </div>
         </div>
@@ -324,13 +359,51 @@ some things is not right <!doctype html>
     <footer class="footer">
       <div class="container footer-inner">
         <div class="muted small">© 2026 TOAST • Built in community • See you on the playa.</div>
-        <div class="small">
-          <a href="#top">Back to top ↑</a>
-        </div>
+        <div class="small"><a href="#top">Back to top ↑</a></div>
       </div>
     </footer>
   </main>
 
-  <script src="script.js"></script>
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+
+    if (menuBtn && mobileNav) {
+      menuBtn.addEventListener('click', () => {
+        const isHidden = mobileNav.getAttribute('aria-hidden') === 'true';
+        mobileNav.setAttribute('aria-hidden', String(!isHidden));
+        mobileNav.classList.toggle('is-open', isHidden);
+        menuBtn.setAttribute('aria-expanded', String(isHidden));
+      });
+
+      // Close mobile nav when a link is clicked
+      mobileNav.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+          mobileNav.setAttribute('aria-hidden', 'true');
+          mobileNav.classList.remove('is-open');
+          menuBtn.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+
+    // Hero thumbnail swapping
+    const heroImg = document.getElementById('heroImg');
+    const thumbs = document.querySelectorAll('.thumb-row .thumb');
+
+    if (heroImg && thumbs.length) {
+      thumbs.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const src = btn.getAttribute('data-src');
+          if (!src) return;
+
+          heroImg.src = src;
+
+          thumbs.forEach(b => b.classList.remove('is-active'));
+          btn.classList.add('is-active');
+        });
+      });
+    }
+  </script>
 </body>
 </html>
